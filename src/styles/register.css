@@ -1,0 +1,58 @@
+body {
+    background-color: rgb(240, 240, 240);
+}
+
+#register-page-header, #register-page-img-div, .sign-in-container {
+    float: left;
+}
+
+#register-page {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: white;
+    margin: 10rem auto;
+    width: 800px;
+    box-shadow: 1rem;
+    border-radius: 0.75rem;
+    text-align: center;
+    padding: 2rem;
+    gap: 2rem;
+    justify-content: space-around;
+}
+
+@media (max-width: 800px) {
+    #register-page {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+    }
+    #register-container {
+        margin: auto;
+    }
+    #register-form {
+        gap: 1rem;
+    }
+}
+
+#register-form, #sign-in-form {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.register-form-input {
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+.n-button {
+    background-color: lightblue;
+    border-radius: 0.75rem;
+    height: 2rem;
+    z-index: 1;
+}
+
+#register-link {
+    color: black;
+}
